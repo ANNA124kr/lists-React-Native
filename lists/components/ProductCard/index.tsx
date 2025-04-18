@@ -1,7 +1,8 @@
 
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import Product from '@/interface';
 import { styles } from './ProductCard.style';
+import { useState } from 'react';
 
 
 interface ProductCardProps {
@@ -11,6 +12,10 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({item}) => {
   const {title, price, description, category, image} = item
+  const [details, setDetails] = useState(false)
+  const showDetails = () => {
+    setDetails(!details)
+  }
   return (
     <View style = {styles.cardContainer}>
       <View style = {styles.card}>
@@ -28,10 +33,18 @@ const ProductCard: React.FC<ProductCardProps> = ({item}) => {
       </View>
         <Text 
           style = {styles.description}
-          numberOfLines={3}
+          numberOfLines={details ? undefined : 2}
         > 
           {description} 
         </Text>
+        <TouchableOpacity
+          style = {styles.detailsButton}
+          onPress={showDetails}
+        >
+          <Text style = {styles.buttonText}>
+            {details ? 'Less' : 'More Details'}
+          </Text>
+        </TouchableOpacity>
     </View>
   );
 };

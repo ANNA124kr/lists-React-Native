@@ -18,7 +18,6 @@ export default function HomeScreen() {
       url: `${baseURL}`
     })
     .then(({data}) => {
-      console.log(data);
       setProducts(data)
     })
     .catch(err => console.error(err))
@@ -37,7 +36,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f6e8e7'
+    backgroundColor: '#ffecef'
   },
   safeView: {
     flex: 1,

@@ -53,16 +53,28 @@ export const styles = StyleSheet.create({
   },
   category: {
     fontSize: 14,
-    color: '#352b2a',
+    color: '#b1727e',
     padding: 5,
     borderWidth: 1,
     borderRadius: 5,
-    borderColor: '#352b2a'
+    borderColor: '#b1727e'
   },
   description: {
     fontSize: 14,
     color: '#666',
     marginTop: 10,
     textAlign: 'justify',
+  },
+  detailsButton: {
+    marginTop: 10,
+    backgroundColor: '#fff',
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+    borderWidth: 0.5,
+    borderColor:'#b1727e'
+  },
+  buttonText: {
+    color:'#b1727e'
   }
 });
