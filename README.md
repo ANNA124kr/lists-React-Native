@@ -28,11 +28,10 @@ https://github.com/user-attachments/assets/b2235ca5-c749-48d8-946a-d3ba17dbb8b5
 ---
 
 ## Features
-- Display lists with dynamic data fetched from an API.
-- Modular components for reusability.
-- State management with React hooks.
-- Responsive design for multiple screen sizes.
-- Easy to extend and customize.
+- Display lists with dynamic data fetched from an API
+- Modular components for reusability
+- State management with React hooks
+- Easy to extend and customize
 
 ---
 
